@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Barebones Quad Writeup</title>
+        <meta name="description" content="">
+        <!-- 
+    	Volton Template
+    	http://www.templatemo.com/tm-441-volton
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+
+        <!-- MAIN CONTENT -->
+<!--        <div class="main-content">-->
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                    <div class="page-section">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="subpage-title">Barebones Quad</h2>
+                            </div>
+                        </div>
+                        
+                        <div class="right">
+                            <img src="img/Drone.jpeg"  width="80%"  style="display: block;margin: auto auto;">
+                             <br><br>       
+                            <video width="80%" style="display: block;margin: 0 auto;" controls >
+                                <source src="video/FirstFlight.mp4" type=video/mp4>
+                            </video>
+                        </div>
+                        
+                        <div class="left" >
+
+
+                            First off, yes, that is a breadboard taped to the drone. For this project, my objective was simply to get something
+                            flying. It had been a while since I had done hands on electronics, so I wanted to avoid as much soldering as possible.
+                            <br>
+                            <br>
+                            The components of note are:
+
+                            <ul class="square">
+                                <li>2S 5000 mAh battery</li>
+                                <li>Teensy 4.1 Microcontroller</li>
+                                <li>MPU9250 IMU</li>
+                                <li>30A ESCs</li>
+                                <li>2300 kV 400W Brushless Motors</li>
+                                <li>6042 Props</li>
+                            </ul>
+                            <br>
+                            
+                            Some technical specs:
+                            <div>
+                                <ul class="square">
+                                    <li>Weight: 800g</li>
+                                    <li>Fuel/battery mass fraction: 72%!</li>
+                                    <li>Motor spacing: 12"x16"</li>
+                                    <li>Frame: Fastened 90 degree aluminum, 1/16" thick</li>
+                                </ul>
+                            </div>
+                            <br>
+                            
+                        To the right can be seen a video of the first (mostly) controlled flight. Success!
+                        <br>
+                        <br>
+                        There's a lot of potential improvements that could be made. I had to get to a quite high throttle 
+                        to take off, and an even higher throttle to get out of ground effect. However, the motors are certainly capable 
+                        of providing the power. At this disk loading, the ideal power is 123W - even if losses through the powertrain
+                        were 75%, each of the motors would be pulling less than 15% of their rated max power. This indicates to me that
+                        the props probably are not a high enough pitch. Of course, I could always decrease the size of the rather large battery.
+                        The frame could be a bit stiffer about the roll axis (aligned with breadboard) as well. Alas, shortly after first flight 
+                        I had to return back to university and leave the quad behind, so these improvements are for another time.
+                        </div>
+                        
+                        <hr style="background: #FFFFFF";>
+                        <br>
+
+                        
+                        <hr >
+    
+                        <div class="row" id="footer">
+                            <div class="col-md-12 text-center">
+                                <p class="copyright-text">Copyright &copy; 2021 Andrew Dallas</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+<!--        </div>-->
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+
+    </body>
+</html>
